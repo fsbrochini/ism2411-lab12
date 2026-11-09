@@ -1,15 +1,18 @@
 # Reflection
 #
-# 1. In Excel I would have to open the file, add a total column, filter
-#    it, and copy the rows into a new sheet by hand every time. Python can
-#    redo the whole thing in one click on a new file, and it handles huge
-#    files that would slow Excel down. Excel is still easier when I just
-#    want to look at the data, make a quick chart, or fix a few cells.
+# Reflection
 #
-# 2. A store could keep a daily sales log where a script adds one line
-#    with the date and that day's total revenue every night. Append mode
-#    is the right tool because it adds the new line to the end without
-#    erasing the earlier days, so the file builds a full history over time.
+# 1. Excel is quite time consuming as you have to manually open the file
+#    and add a total column, then apply filtering and manually copy the
+#    rows into a new sheet. However, using Python we are able to recreate
+#    this in one click on a new file. It can also process large files much
+#    better than Excel. If you just want to take a look at your data,
+#    create a quick chart or edit a few cells, Excel can be much quicker.
+#
+# 2. A shop could keep a record of their sales each day. A script could be
+#    used to add a single row with the date and total revenue for the day.
+#    Append mode is the right tool because it adds the new row to the
+#    bottom of the file, so previous days won't be overwritten.
 
 import csv
 from datetime import datetime
